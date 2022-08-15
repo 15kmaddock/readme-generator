@@ -24,8 +24,8 @@ const questions = () => {
             type: 'input',
             name: 'description',
             message: 'Enter description of your project (Required)',
-            validate: desInput => {
-                if(desInput) {
+            validate: descInput => {
+                if(descInput) {
                     return true;
                 } else {
                     console.log('Please enter project description!');
@@ -43,8 +43,8 @@ const questions = () => {
             type: 'input',
             name: 'installation',
             message: 'Please enter the installation instructions for your project (Required)',
-            validate: installInput => {
-                if(installInput) {
+            validate: installationInput => {
+                if(installationInput) {
                     return true;
                 } else {
                     console.log('Please enter installation instruction!');
@@ -109,8 +109,8 @@ const questions = () => {
             type: 'input',
             name: 'email',
             message: 'Please provide email associated with GitHub (Required)',
-            validate: userEmail => {
-                if(userEmail) {
+            validate: gitEmail => {
+                if(gitEmail) {
                     return true;
                 } else {
                     console.log('Enter email!');
@@ -122,8 +122,8 @@ const questions = () => {
             type: 'input',
             name: 'username',
             message: 'Please enter GitHub username',
-            validate: usernameInput => {
-                if(usernameInput) {
+            validate: gitnameInput => {
+                if(gitnameInput) {
                     return true;
                 } else {
                     console.log('Please enter Github username!');
@@ -138,6 +138,6 @@ function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {}
-
+    
 // Function call to initialize app
 init();
